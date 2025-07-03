@@ -61,6 +61,15 @@ else
   echo "TypeScript 已安装，跳过。"
 fi
 
+# 检查并安装 ts-node
+echo "检查 ts-node..."
+if ! command -v ts-node &> /dev/null; then
+  echo "未检测到 ts-node，正在安装..."
+  npm install -g ts-node
+else
+  echo "ts-node 已安装，跳过。"
+fi
+
 # 检查并安装 .NET SDK (C#)
 echo "检查 .NET SDK (C#)..."
 if ! command -v dotnet &> /dev/null; then

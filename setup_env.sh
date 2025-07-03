@@ -40,6 +40,10 @@ if ! command -v python3 &> /dev/null; then
 else
   echo "Python3 已安装，跳过。"
 fi
+#python引导到python3，并加入到.bashrc
+alias python=python3
+echo "alias python=python3" >> ~/.bashrc
+source ~/.bashrc
 
 # 检查并安装 Node.js
 echo "检查 Node.js..."

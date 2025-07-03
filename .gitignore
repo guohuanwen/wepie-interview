@@ -4,3 +4,7 @@ hello
 /ts/hello.js
 .vscode
 *.dSYM
+.idea
+/out
+wepie-interview.iml
+wepie-interview.slh

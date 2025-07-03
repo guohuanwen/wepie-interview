@@ -5,6 +5,7 @@ hello
 .vscode
 *.dSYM
 .idea
-/out
+/out/*
 wepie-interview.iml
 wepie-interview.sln
+.DS_Store

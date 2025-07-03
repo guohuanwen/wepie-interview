@@ -1,1 +1,5 @@
-console.log("Hello, TypeScript!"); 
+function main(): void {
+    console.log("hello wepie");
+}
+
+main(); 

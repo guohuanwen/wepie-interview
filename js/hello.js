@@ -1,1 +1,5 @@
-console.log("Hello, JavaScript!"); 
+function main() {
+    console.log("hello wepie");
+}
+
+main(); 

@@ -40,10 +40,8 @@ if ! command -v python3 &> /dev/null; then
 else
   echo "Python3 已安装，跳过。"
 fi
-#python引导到python3，并加入到.zshrc
-alias python=python3
-echo "alias python=python3" >> ~/.zshrc
-source ~/.zshrc
+#为python3创建软链接，给vscode调用
+sudo ln -sfn $(which python3) /usr/local/bin/python 
 
 # 检查并安装 Node.js
 echo "检查 Node.js..."
@@ -79,4 +77,4 @@ code --install-extension ms-python.python
 code --install-extension ms-vscode.vscode-typescript-next
 code --install-extension ms-dotnettools.csharp
 
-echo "环境安装完成！" 
+echo "环境安装完成！"
